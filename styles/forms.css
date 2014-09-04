@@ -1,0 +1,118 @@
+/*For element for old browser support*/
+form * {
+	background: transparent;
+}
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+	background: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0;
+}
+
+/*CSS3 structural pseudo class selectors before and after for the 
+container to adjust the height of the floating elemenets automatically */
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.group:after { clear: both; }  
+.group { zoom: 1; }  
+
+
+/*Code to center the form elements and give a background texture*/
+form {
+	/*width: 300px;*/
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+/*Make the label elements display as a block level elements*/
+
+label {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	font-weight: bold;
+	color: #777;
+	padding-top: 15px;
+}
+
+/*Code for input text and fields to give a rounded rectangular gradient and shadow effect*/
+
+form input[type=text], input[type=password], textarea {
+
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	padding: 5px;
+	background: #EEE;
+	border: 1px solid #FFF;
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 16px;
+	color: #666;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	background: -webkit-linear-gradient(#FFF,#DDD);
+	background: -moz-linear-gradient(#FFF,#DDD);
+	background: -o-linear-gradient(#FFF,#DDD);
+	background: linear-gradient(#FFF,#DDD);
+    -pie-background: linear-gradient(#FFF, #DDD);
+
+	-webkit-box-shadow: inset 0px 2px 3px #666,inset 0px -5px 3px #EEE;
+	-moz-box-shadow: inset 0px 2px 3px #666,inset 0px -5px 3px #EEE;
+	box-shadow: inset 0px 2px 3px #666,inset 0px -5px 3px #EEE;
+}
+
+/*code to make the submit button stylish*/
+
+form input[type=submit] {
+	padding: 5px;
+	background: #666;
+	color:white;
+	border:none;
+	float: right;
+	margin-right: 12px;
+	margin-top: 10px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}
+
+/*Useful dynamic pseudo class selector to make highlight the fields as they are selected*/
+
+input:focus, textarea:focus {
+	outline: solid orange;
+}
+
+/*Code to provide a mandatory icon on the textfield*/
+
+input[type=text].required {
+	padding-left:30px;
+	width:220px;
+}
+
+input.required {
+	background: url(required.png) no-repeat 5px 5px, -webkit-linear-gradient(#FFF,#DDD);
+	background: url(required.png) no-repeat 5px 5px, -moz-linear-gradient(#FFF,#DDD);
+	background: url(required.png) no-repeat 5px 5px, -o-linear-gradient(#FFF,#DDD);
+	background: url(required.png) no-repeat 5px 5px, -ms-linear-gradient(#FFF,#DDD);
+	background: url(required.png) no-repeat 5px 5px, linear-gradient(#FFF,#DDD);
+	-pie-background: url(required.png) no-repeat 5px 5px, linear-gradient(#FFF, #DDD);
+}
+
+/*Dynamic pseudo class selector which makes the form fields highlight*/
+label:hover input[type=text], input[type=password]:hover, textarea:hover {
+	outline: solid brown;
+}
+
+

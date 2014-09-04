@@ -1,0 +1,493 @@
+html{
+	width:100%;
+	font-size: 13px;
+	color: #3b5999;
+	font-family: "Noto Sans";
+	background-image: url(../img/bckgrnd_texture.jpg);
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+
+
+body{
+}
+
+
+header{
+	width: 100%;
+	padding: 0px 20px 0px 20px;
+	margin: 0 auto;
+	height: 110px;
+
+	background-image: linear-gradient(bottom, rgb(209,209,209) 0%, rgb(255,255,255) 82%);
+	background-image: -o-linear-gradient(bottom, rgb(209,209,209) 0%, rgb(255,255,255) 82%);
+	background-image: -moz-linear-gradient(bottom, rgb(209,209,209) 0%, rgb(255,255,255) 82%);
+	background-image: -webkit-linear-gradient(bottom, rgb(209,209,209) 0%, rgb(255,255,255) 82%);
+	background-image: -ms-linear-gradient(bottom, rgb(209,209,209) 0%, rgb(255,255,255) 82%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(209,209,209)),
+	color-stop(0.82, rgb(255,255,255)));
+
+	border: 1px solid #e1e1e1;
+	-webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.50);
+	-moz-box-shadow:    0px 3px 10px rgba(50, 50, 50, 0.50);
+	box-shadow:         0px 3px 10px rgba(50, 50, 50, 0.50);
+}
+
+header a{
+	color: #2C2C5E;
+	text-decoration: none;
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+#headerNav{
+	float: right;
+	margin: 50px 45px 0 0;
+	color: #3b5999;
+}
+
+
+#logo{
+	float: left;
+	margin: 30px 0 0 100px;
+	background: url(../img/logo_img.png) no-repeat;
+	width: 304px;
+	height: 50px;
+	left: 11px;
+	top: 92px;
+}
+/*Body Content Styles goes here*/
+
+.mainContent{
+	margin: 20px auto 0;
+	text-align: center;
+	/*height: 600px;*/
+	
+}
+
+.mainContent section{
+	position: relative;
+	/*height: 200px;*/
+	width: 900px;
+	margin: 90px 0px 0px 20%;
+	/*border: 1px solid green;	*/
+	/*padding: 50px 50px;*/
+	height: 600px;
+}
+
+.mainContent section #widgets{
+	float: left;
+	width: 650px;
+	border-right: 1px solid grey;
+	/*border: 1px solid red;*/
+}
+
+.mainContent section aside{
+	float: left;
+	margin: 0px 0px 0px 30px;
+	top: 150px;
+	width: 200px;
+	height: 200px;
+	text-align: left;
+	background-image: url(../img/expertise_img.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	/*border: 1px solid blue;*/
+	position: relative;
+}
+
+.mainContent aside h2{
+	position: relative;
+	left: 28px;
+	top: -5px;
+	color: #F46F2C;
+}
+
+.mainContent aside h2 a{
+	color: #F46F2C;
+	text-decoration: none;	
+}
+
+.mainContent aside h2 a:hover{
+	text-decoration: underline;
+}
+
+.mainContent aside ul{
+	position: relative;
+	top: -8px;
+	color: white;
+	padding: 1px 0px 0px 50px;
+	list-style: none;
+	line-height: 48px;
+}
+
+.mainContent section#ourServices{
+	border-right: none;
+}
+
+.mainContent section#ourServices ul{
+	list-style: none;
+}
+.mainContent section article{
+	position: relative;
+	float: left;
+	width: 250px;
+	/*height: 200px;*/
+	margin: 15px auto;
+	text-align: left;
+}
+
+.mainContent .content a{
+	color: #3b5999;
+	text-decoration: none;
+}
+
+.mainContent .content a:hover{
+	text-decoration: underline; 
+}
+
+
+/*This is CSS rules for IDEA div area*************************/
+#idea{
+	width: 250px;
+}
+
+#idea div.image{
+	height: 100px;
+	background-image: url(../img/idea_img.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#idea div.content{
+	height: 100px;
+	padding: 0px 10px 10px 10px;
+}
+
+#idea div.content div{
+	float:left;
+}
+
+#idea div.content .titleBar{
+	margin: 10px 0px 10px 10px;
+	width: 80px;
+	height: 55px;
+	text-align:right;
+	padding: 5px 10px 5px 0px;
+	border-right:1px solid grey;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.biggerFont {
+	font-size: 25px;
+	display:block;
+}
+
+#idea div.content .infoBar{
+		font-size: 13px;
+		color: #787878;
+		margin: 12px 0px 10px 5px;
+		text-align:left;
+}
+
+#idea div.content .infoBar ul{
+	list-style:none;
+}
+
+
+/*This is CSS rules for IDEA div area*************************/
+
+
+/*This is CSS rules for startup div area*************************/
+
+#startup{
+	width: 260px;
+	position: relative;
+	left: 117px;
+}
+
+#startup div.image{
+	height: 100px;
+	background-image: url(../img/starting_img.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#startup div.content{
+	height: 100px;
+	padding: 0px 0px 10px 0px;
+}
+
+#startup div.content div{
+	float:left;
+}
+
+#startup div.content .titleBar{
+	margin: 10px 0px 10px 10px;
+	width: 80px;
+	height: 55px;
+	text-align:right;
+	padding: 5px 15px 5px 0px;
+	border-right:1px solid grey;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.biggerFont {
+ font-size: 25px;
+ display:block;
+}
+
+#startup div.content .infoBar{
+		font-size: 13px;
+		color: #787878;
+		width: 140px;
+		margin: 12px 0px 10px 5px;
+		text-align:left;
+}
+
+#startup div.content .infoBar ul{
+	list-style:none;
+}
+
+
+/*This is CSS rules for STARTUP div area*************************/
+
+/*This is CSS rules for niche div area*************************/
+
+#niche{
+	width: 300px;
+	position: relative;
+	left: -24px;
+}
+
+#niche div.image{
+	height: 100px;
+	background-image: url(../img/niche_img.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#niche div.content{
+	height: 100px;
+	padding: 0px 10px 10px 0px;
+}
+
+#niche div.content div{
+	float:left;
+}
+
+#niche div.content .titleBar{
+	margin: 10px 0px 10px 10px;
+	width: 120px;
+	height: 55px;
+	text-align:right;
+	padding: 5px 10px 5px 0px;
+	border-right:1px solid grey;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.biggerFont {
+ font-size: 25px;
+ display:block;
+}
+
+#niche div.content .infoBar{
+		color: #787878;
+		margin: 12px 0px 10px 5px;
+		text-align:left;
+}
+
+#niche div.content .infoBar ul{
+	list-style:none;
+}
+
+
+/*This is CSS rules for niche div area*************************/
+
+/*This is CSS rules for setup div area*************************/
+#setup{
+	width: 270px;
+	position: relative;
+	left: 24px;
+}
+
+
+#setup div.image{
+	height: 100px;
+	background-image: url(../img/setup_img.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#setup div.content{
+	height: 100px;
+	padding: 0px 10px 0px 10px;
+}
+
+#setup div.content div{
+	float:left;
+}
+
+#setup div.content .titleBar{
+	margin: 10px 0px 10px 10px;
+	width: 120px;
+	height: 55px;
+	text-align:right;
+	padding: 5px 10px 5px 0px;
+	border-right:1px solid grey;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.biggerFont {
+ font-size: 25px;
+ display:block;
+}
+
+#setup div.content .infoBar{
+		font-size: 13px;
+		color: #787878;
+		margin: 12px 0px 10px 5px;
+		text-align:left;
+}
+
+#setup div.content .infoBar ul{
+	list-style:none;
+}
+
+/*This is CSS rules for setup div area*************************/
+
+
+
+
+
+/*This is CSS rules for Landing page*************************/
+#services{
+	width: 100%;
+	margin: 30px 0%;
+	top: -80px;	
+}
+
+#services div{
+	text-align: left;
+	margin: 30px auto;
+}
+
+#services h2{
+	border-bottom: 1px solid grey;
+}
+
+
+
+
+
+
+/*Side bar Div tag*********************************************/
+
+
+
+/*Footer styles goes here*/
+footer{
+	 /*position and bottom tag will align the footer always to the bottom of the page*/
+	bottom: 0; /*bottom and position will align the footer to the bottom of the page*/
+	width: 100%;
+	color: #fff;
+	font-size: 13px;
+	height: 120px;
+	padding: 20px 20px 0px 20px;
+	background: url(../img/footer_background.jpg) repeat-x top;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+#footerNav{
+	float: left;
+	margin: 18px 0 0px 30px;
+}
+
+#footerNav ul{
+	list-style: none;
+}
+
+#location{
+	position: absolute;
+	float: left;
+	margin: 20px 35% 0px;
+	width: 210px;
+	/*height: 49px;*/
+	background: url(../img/location_img.png) no-repeat top right;
+	padding: 50px auto;
+	line-height: 50px;
+	/*text-align: center;*/
+}
+
+#clarification{
+	width: 350px;
+	position: absolute;
+	float: right;
+	right: 20px;
+	margin: 10px 0;
+
+}
+
+#clarification div:nth-child(1){
+	width: 100px;
+	float: left;
+	/*margin: 0 10px;*/
+	padding: 0 10px;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	height: 55px;
+	line-height: 55px;	
+}
+
+#clarification div:nth-child(2){
+	float: left;
+	line-height: 20px;
+	padding: 0 15px;
+}
+
+#clarification div ul{
+	list-style: none;	
+}
+
+#copyright{
+	float: left;
+	color: #3b5999;
+	margin: 30px 0;
+}
+
+footer #link{
+	float: right;
+	margin: 30px 50px;
+	color: #3b5999;
+}
+
+footer #link a{
+	color: #3b5999;
+	}
+* {
+	margin: 0px;
+	padding: 0px;
+}
